@@ -1,0 +1,51 @@
+<html>
+<head>
+
+</head>
+<body>
+<h2>JavaScript Array Sort</h2>
+<p id="canvas"></p>
+<p>Click the button to sort array in ascending order.</p>
+<button onclick="ascending()">Ascending Oreder</button>
+<button onclick="descending()">Descending Oreder</button>
+<script>
+var points = [1 , 100 , 4 , 73 , 30];
+document.getElementById("canvas").innerHTML = points;
+function ascending() {
+    points.sort(function (a, b){return a - b});
+     document.getElementById("canvas").innerHTML = points;
+}
+function descending() {
+    points.sort(function (a, b){return b - a});
+    document.getElementById("canvas").innerHTML = points;
+}
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
